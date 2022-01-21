@@ -1,0 +1,128 @@
+.attribution { font-size: 11px; text-align: center;height: 40px;box-shadow: 4px 5px 4px gray;
+
+
+}
+.attribution a { color: hsl(228, 45%, 44%);text-decoration: none; }
+.attribution:hover {background-color: hsl(179, 100%, 13%);color: white;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    flex-direction: column;
+}
+#container {
+    width: 1440px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.element {
+    width: 250px;
+    height: 400px;
+    border-radius: 10px 0px 0px 10px;
+    
+    padding: 35px;
+}
+.element:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+.element:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0px 0px 0px 0px;
+    
+} 
+.element a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.element:nth-child(2) a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.element:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;;
+}
+.element:nth-child(3) a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+.element h1 {
+    font-weight: 700;
+    color: white;
+}
+.element p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8rem;
+    padding: 20px 0px 110px;
+}
+.element a {
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.element img {
+    transform: scale(80%) translateY(-10px);
+}
+.one, .two, .three {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+.two {
+    color: hsl(184, 100%, 22%);
+}
+.three {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:375px) {
+    
+   #container {
+       display: flex;
+       flex-direction: column;
+       margin-top: 350px;
+       margin-right: 30px;
+
+   }
+   .element {
+       width: 310px;
+       height: 600px;
+   }
+
+   .element img {
+       transform: scale(100%);
+       padding-bottom: 20px;
+   }
+  
+   .element p {
+       font-size: 1rem;
+       padding-bottom: 40px;
+   }
+   
+   .element:nth-child(1){
+       border-radius: 10px 10px 0px 0px;
+   }
+   .element:nth-child(3) {
+       border-radius: 0px 0px 10px 10px;
+   }
+   .attribution {
+       transform: translateY(260px);
+       margin-right: 25px;
+       box-shadow: none;
+       font-size: 0.7rem;
+   }
+}
